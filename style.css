@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100%;
+    background: #16222A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #224a5e, #16222A);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 850px;
+    text-align: center;
+    padding: 30px;
+}
+
+.container h2 {
+    font-size: 36px;
+    margin-bottom: 60px;
+    text-decoration: underline;
+    text-underline-offset: 9px;
+    color: white;
+}
+
+.container .question {
+    font-size: 26px;
+    margin-top: 30px;
+    color: white;
+}
+
+.container .choices {
+    margin-top: 30px;
+}
+
+.choice {
+    /* background-color: green; */
+    font-size: 20px;
+    background-color: #eee;
+    color: #000;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    width: 60%;
+    cursor: pointer;
+    /* opacity: 0; */
+    /* transform: translateY(50%); */
+    animation: fade-in 0.5s ease forwards;
+}
+
+.choice:hover {
+    background-color: #7c7575;
+}
+
+.btn {
+    width: 60%;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 12px 20px;
+    margin: 20px auto 0 auto;
+    background-color: #006400;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #225e24;
+}
+
+.choice.selected {
+    background-color: #006400;
+}
+
+.scoreCard {
+    color: white;
+    font-size: 26px;
+    margin-top: 20px;
+}
